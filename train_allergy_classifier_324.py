@@ -5,15 +5,7 @@
 - 324_X_train_source115_genus_metabolite.xlsx (训练集)
 - 324_X_test_source203_genus_metabolite.xlsx (测试集)
 - 324_y_train_source115_genus_metabolite.xlsx (训练标签)
-- 324_y_test_source203_genus_metabolite.xlsx (测试标签        # X_train = pd.read_excel('324_X_train_source115_genus_metabolite.xlsx', index_col=0)
-        # y_train = pd.read_excel('324_y_train_source115_genus_metabolite.xlsx', index_col=0)
-        # X_test = pd.read_excel('324_X_test_source203_genus_metabolite.xlsx', index_col=0)
-        # y_test = pd.read_excel('324_y_test_source203_genus_metabolite.xlsx', index_col=0)
-
-        X_train = pd.read_excel('324_X_test_source203_genus_metabolite.xlsx', index_col=0)
-        y_train = pd.read_excel('324_y_test_source203_genus_metabolite.xlsx', index_col=0)
-        X_test = pd.read_excel('324_X_train_source115_genus_metabolite.xlsx', index_col=0)
-        y_test = pd.read_excel('324_y_train_source115_genus_metabolite.xlsx', index_col=0)
+- 324_y_test_source203_genus_metabolite.xlsx (测试标签        
 标签含义:
 - 1 (IgE): 引起过敏反应的样本
 - 0 (N group): 非过敏性样本（正常对照组）
@@ -292,15 +284,10 @@ def main():
     # 加载数据
     print("\\n📊 加载数据...")
     try:
-        # X_train = pd.read_excel('324_X_train_source115_genus_metabolite.xlsx', index_col=0)
-        # y_train = pd.read_excel('324_y_train_source115_genus_metabolite.xlsx', index_col=0)
-        # X_test = pd.read_excel('324_X_test_source203_genus_metabolite.xlsx', index_col=0)
-        # y_test = pd.read_excel('324_y_test_source203_genus_metabolite.xlsx', index_col=0)
-
-        X_train = pd.read_excel('324_X_test_source203_genus_metabolite.xlsx', index_col=0)
-        y_train = pd.read_excel('324_y_test_source203_genus_metabolite.xlsx', index_col=0)
-        X_test = pd.read_excel('324_X_train_source115_genus_metabolite.xlsx', index_col=0)
-        y_test = pd.read_excel('324_y_train_source115_genus_metabolite.xlsx', index_col=0)
+        X_train = pd.read_excel('324_X_train_source115_genus_metabolite.xlsx', index_col=0)
+        y_train = pd.read_excel('324_y_train_source115_genus_metabolite.xlsx', index_col=0)
+        X_test = pd.read_excel('324_X_test_source203_genus_metabolite.xlsx', index_col=0)
+        y_test = pd.read_excel('324_y_test_source203_genus_metabolite.xlsx', index_col=0)
         
         print(f"✅ 数据加载成功")
         print(f"   训练集: {X_train.shape[0]}个样本, {X_train.shape[1]}个特征")
